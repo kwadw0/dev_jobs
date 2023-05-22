@@ -1,0 +1,156 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans?query=kumbh');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+
+body{
+    background-color: #f4f6f8;
+}
+
+i{
+  color: #5964E0;
+}
+
+
+#logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    border-radius: 0rem 0rem 0rem 6.25rem;
+    background-color: #5964E0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #5964E0;
+
+}
+
+.job-container {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  margin-top: 5rem;
+  background-color: #5964E0;
+
+}
+
+.search-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 5rem;
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.search-input {
+  display: flex;
+  padding: 20px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+}
+
+.input-field {
+  display: flex;
+  padding: 20px;
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  margin-right: 60px;
+}
+
+.input-checkbox {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 12px;
+  margin-right: 15px;
+}
+.search-button {
+  padding: 20px 20px;
+  margin-left: 15px;
+  background-color: #5964E0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.job-card {
+  width: 22rem;
+  height: 14.25rem;
+  padding: 5px;
+  background-color: #ffffff;
+  margin-top: 5rem;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.job-company {
+  display: flex;
+  align-items: center;
+
+}
+
+.job-location{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  color: #5964E0;
+  font-size: small;
+}
+
+.job-logo {
+  display:grid;
+  margin-right: 16.75;
+  margin-left: 2rem;
+  align-items: end;
+}
+.logo {
+  height: 3.125rem;
+  width: 3.125rem;
+  
+}
+
+
+
+
+
