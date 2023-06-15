@@ -30,6 +30,7 @@ i {
   height: 10rem;
   border-radius: 0rem 0rem 0rem 6.25rem;
   background-color: #5964e0;
+  background-image: url("../assets/desktop/bg-pattern-header.svg");
 }
 
 .container {
@@ -137,7 +138,7 @@ i {
   color: white;
   cursor: pointer;
 }
-.job-container {
+.job_container {
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-columns: 1fr;
@@ -146,8 +147,7 @@ i {
   margin: 10%;
 }
 
-
-.job-card {
+.job_card {
   padding: 2rem;
   width: 100%; /* Change to a relative width */
   max-width: 27.87rem; /* Set a maximum width */
@@ -234,10 +234,6 @@ i {
   background-color: #ffffff;
 }
 
-.company-info {
-  
-}
-
 .company-name {
   margin-left: 2.5rem;
   margin-left: 2.5rem;
@@ -255,7 +251,7 @@ i {
   color: #19202d;
 }
 
-#comapny-website {
+#company-website {
   font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 400;
@@ -265,7 +261,6 @@ i {
 }
 
 #company-site {
-  display: flex;
   width: 9.1875rem;
   height: 3rem;
   border-radius: 0.3125rem;
@@ -278,7 +273,7 @@ i {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25rem;
-  color: #5964e0;
+  color: #ffffff;
 }
 
 .company-site-button {
@@ -317,10 +312,13 @@ i {
   margin-top: 1rem;
   color: #5964e0;
 }
-
+.company-site2-button {
+  margin-left: auto;
+}
 #company-site2 {
   width: 9.1875rem;
   height: 3rem;
+  margin-left: auto;
   border-radius: 0.4rem;
   background: #5964e0;
   mix-blend-mode: normal;
@@ -378,8 +376,33 @@ ol {
   margin-left: 1.25rem;
   color: #5964e0;
 }
+
+.footer {
+  display: flex;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 4rem;
+  padding-left: 23.7rem;
+  padding-right: 23.7rem;
+}
+.company-name-footer {
+  display: flex;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #19202d;
+}
+
+
+
 @media (max-width: 637px) {
-  .job-container {
+  .job_container {
     grid-template-rows: repeat(8, auto);
     grid-template-columns: repeat(1, minmax(0, 1fr));
     row-gap: 2rem;
@@ -402,12 +425,11 @@ ol {
     margin-left: 5%;
     margin-right: 5%;
   }
-
 }
 
 /* Media query for tablets */
 @media (min-width: 638px) and (max-width: 991.98px) {
-  .job-container {
+  .job_container {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 3rem;
@@ -430,12 +452,11 @@ ol {
     margin-left: 10%;
     margin-right: 10%;
   }
-  
 }
 
 /* Media query for desktop */
 @media (min-width: 992px) {
-  .job-container {
+  .job_container {
     grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(3, minmax(0, 1fr));
     row-gap: 4.5rem;
@@ -459,5 +480,4 @@ ol {
     margin-left: 20%;
     margin-right: 20%;
   }
- 
 }
