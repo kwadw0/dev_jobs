@@ -294,6 +294,11 @@ i {
   color: #19202d;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
 #job-detail-type {
   font-family: "Kumbh Sans";
   font-style: normal;
