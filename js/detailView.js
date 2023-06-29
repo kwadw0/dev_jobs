@@ -21,11 +21,11 @@ fetch(detailedUrl)
         ".company-info-container",
       );
       const header_placeholder = document.querySelector(".company-detail-container");
-
+      const footer_placeholder = document.querySelector(".footer")
       let detail_output = `
         <div class="company-info">
           <p id="job-detail-type">${job.postedAt} . ${job.contract}</p>
-          <h2 class="job-detail-title">${job.position}</h2>
+          <h3 class="job-detail-title">${job.position}</h3>
           <p id="job-detail-location">${job.location}</p>
           <div class="company-site2-button">
             <button type="submit" id="company-site2">Apply Now</button>
@@ -71,8 +71,17 @@ fetch(detailedUrl)
         </div>      
         `;
 
+      let footer_output = `
+      <h3 class="company-name-footer">${job.position}</h3>
+      
+      <p id="company-website">${job.company}</p>
+      <button type="submit" id="company-footer-site">Company Site</button>
+      `;
+    
+
       detail_placeholder.innerHTML = detail_output;
       header_placeholder.innerHTML = header_output;
+      footer_placeholder.innerHTML = footer_output;
     } else {
       console.error("Job not found.");
     }
