@@ -24,23 +24,36 @@
       <div id="logo">
         <h1><a href="../Template/index.html">devjobs</a></h1>
       </div>
+      <div class="theme-switcher">dark mode</div>
     </div>
     <div class="container">
-      <div class="search-card">
-        <i class="fa fa-search" style="font-size: 30px"></i>
-        <input type="text" placeholder="Search..." class="search-input" />
-        <i class="fas fa-map-marker-alt" style="font-size: 30px"></i>
-        <input type="text" placeholder="location" class="location-field" />
-        <input type="checkbox" name="" class="input-checkbox" id="" />
-        <label for="" id="fulltime">full time only</label>
-        <br />
+      <div class="search-section">
+        <input
+          type="text"
+          placeholder="Enter job desc..."
+          class="search-input"
+        />
+        <i class="fa fa-search search-icon" style="font-size: 30px"></i>
+      </div>
+      <div class="modal">
+        <div class="filter">
+          <i class="fas fa-map-marker-alt" style="font-size: 30px"></i>
+          <input
+            type="text"
+            class="filter-input"
+            placeholder="Filter by location..."
+          />
+          <hr />
+        </div>
+        <div class="full-time">
+          <input type="checkbox" name="" class="fulltime-checkbox" />
+          <label for="" id="fulltime">Full Time only</label>
+        </div>
         <button class="search-button">Search</button>
       </div>
+      <br />
     </div>
-    <div class="job_container">
-      
-    </div>
+    <div class="job_container"></div>
     <script src="../js/base.js"></script>
   </body>
 </html>
-

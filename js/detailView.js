@@ -18,10 +18,12 @@ fetch(detailedUrl)
 
     if (job) {
       const detail_placeholder = document.querySelector(
-        ".company-info-container",
+        ".company-info-container"
       );
-      const header_placeholder = document.querySelector(".company-detail-container");
-      const footer_placeholder = document.querySelector(".footer")
+      const header_placeholder = document.querySelector(
+        ".company-detail-container"
+      );
+      const footer_placeholder = document.querySelector(".footer");
       let detail_output = `
         <div class="company-info">
           <p id="job-detail-type">${job.postedAt} . ${job.contract}</p>
@@ -65,10 +67,7 @@ fetch(detailedUrl)
         <h2 id="detail-company-name">${job.company}</h2>
         <p id="company-website"><a href="${job.website}">${job.company}.com</a></p>
         </div>
-
-        <div class="company-site-button">
-        <button type="submit" id="company-site">Company Site</button>
-        </div>      
+        <button type="submit" id="company-site-btn">Company Site</button>
         `;
 
       let footer_output = `
@@ -77,7 +76,6 @@ fetch(detailedUrl)
       <p id="company-website">${job.company}</p>
       <button type="submit" id="company-footer-site">Company Site</button>
       `;
-    
 
       detail_placeholder.innerHTML = detail_output;
       header_placeholder.innerHTML = header_output;
